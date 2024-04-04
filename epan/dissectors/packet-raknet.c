@@ -452,6 +452,7 @@ raknet_dissect_open_connection_reply_2(tvbuff_t *tvb, packet_info *pinfo, proto_
 {
     proto_tree *sub_tree;
     gint offset;
+    raknet_session_state_t* state;
 
     sub_tree = init_raknet_offline_message(tvb, pinfo, tree, &offset);
 
